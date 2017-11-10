@@ -1,0 +1,2705 @@
+
+2017-09-30 15:42:21
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2017-09-30 15:52:31
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2017-09-30 15:57:36
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2017-09-30 15:58:27
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2017-09-30 15:59:11
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2017-09-30 15:59:50
+[ERROR]-[Thread: main]-[com.jfinal.kit.LogKit.error()]: Can not create instance of class: com.sinorail.gysglbj.MainConfig
+java.lang.RuntimeException: Can not create instance of class: com.sinorail.gysglbj.MainConfig
+	at com.jfinal.core.JFinalFilter.createJFinalConfig(JFinalFilter.java:102)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:47)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:131)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:70)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.sinorail.wst.MainConfig.main(MainConfig.java:137)
+Caused by: java.lang.ClassNotFoundException: com.sinorail.gysglbj.MainConfig
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:372)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:360)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:430)
+	at com.jfinal.server.JFinalClassLoader.loadClass(JFinalClassLoader.java:53)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:260)
+	at com.jfinal.core.JFinalFilter.createJFinalConfig(JFinalFilter.java:100)
+	... 16 more
+
+2017-09-30 16:01:11
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2017-09-30 16:01:50
+[ERROR]-[Thread: qtp537548559-31]-[com.jfinal.core.ActionHandler.handle()]: /login/login
+com.jfinal.plugin.activerecord.ActiveRecordException: java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
+
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:593)
+	at com.jfinal.plugin.activerecord.Model.findFirst(Model.java:613)
+	at com.sinorail.wst.model.DicUser.queryIsPassed(DicUser.java:22)
+	at com.sinorail.wst.action.LoginAction.login(LoginAction.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:73)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:74)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:74)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:208)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:886)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1175)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1296)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3613)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3657)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1495)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:2714)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_executeQuery(WallFilter.java:604)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:2711)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_executeQuery(FilterEventAdapter.java:465)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:2711)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.executeQuery(PreparedStatementProxyImpl.java:132)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeQuery(DruidPooledPreparedStatement.java:227)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:574)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:591)
+	... 33 more
+
+2017-09-30 16:02:07
+[ERROR]-[Thread: qtp537548559-33]-[com.jfinal.core.ActionHandler.handle()]: /login/login
+com.jfinal.plugin.activerecord.ActiveRecordException: java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
+
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:593)
+	at com.jfinal.plugin.activerecord.Model.findFirst(Model.java:613)
+	at com.sinorail.wst.model.DicUser.queryIsPassed(DicUser.java:22)
+	at com.sinorail.wst.action.LoginAction.login(LoginAction.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:73)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:74)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:74)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:208)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:886)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1175)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1296)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3613)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3657)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1495)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:2714)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_executeQuery(WallFilter.java:604)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:2711)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_executeQuery(FilterEventAdapter.java:465)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:2711)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.executeQuery(PreparedStatementProxyImpl.java:132)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeQuery(DruidPooledPreparedStatement.java:227)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:574)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:591)
+	... 33 more
+
+2017-09-30 16:03:11
+[INFO]-[Thread: JFinal-Scanner]-[com.alibaba.druid.pool.DruidDataSource.close()]: {dataSource-1} closed
+
+2017-09-30 16:03:12
+[INFO]-[Thread: JFinal-Scanner]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2017-09-30 16:03:16
+[INFO]-[Thread: JFinal-Scanner]-[com.alibaba.druid.pool.DruidDataSource.close()]: {dataSource-1} closed
+
+2017-09-30 16:03:17
+[INFO]-[Thread: JFinal-Scanner]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2017-09-30 16:03:26
+[ERROR]-[Thread: qtp537548559-33]-[com.jfinal.core.ActionHandler.handle()]: /login/login
+com.jfinal.plugin.activerecord.ActiveRecordException: java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
+
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:593)
+	at com.jfinal.plugin.activerecord.Model.findFirst(Model.java:613)
+	at com.sinorail.wst.model.DicUser.queryIsPassed(DicUser.java:22)
+	at com.sinorail.wst.action.LoginAction.login(LoginAction.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:73)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:74)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:74)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:208)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:886)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1175)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1296)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3613)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3657)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1495)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:2714)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_executeQuery(WallFilter.java:604)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:2711)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_executeQuery(FilterEventAdapter.java:465)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:2711)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.executeQuery(PreparedStatementProxyImpl.java:132)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeQuery(DruidPooledPreparedStatement.java:227)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:574)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:591)
+	... 33 more
+
+2017-09-30 16:03:55
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2017-09-30 16:04:18
+[ERROR]-[Thread: qtp495792375-33]-[com.jfinal.core.ActionHandler.handle()]: /login/login
+com.jfinal.plugin.activerecord.ActiveRecordException: java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
+
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:593)
+	at com.jfinal.plugin.activerecord.Model.findFirst(Model.java:613)
+	at com.sinorail.wst.model.DicUser.queryIsPassed(DicUser.java:22)
+	at com.sinorail.wst.action.LoginAction.login(LoginAction.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:73)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:74)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:74)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:208)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:886)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1175)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1296)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3613)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3657)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1495)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:2714)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_executeQuery(WallFilter.java:604)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:2711)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_executeQuery(FilterEventAdapter.java:465)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:2711)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.executeQuery(PreparedStatementProxyImpl.java:132)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeQuery(DruidPooledPreparedStatement.java:227)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:574)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:591)
+	... 33 more
+
+2017-09-30 16:04:54
+[INFO]-[Thread: JFinal-Scanner]-[com.alibaba.druid.pool.DruidDataSource.close()]: {dataSource-1} closed
+
+2017-09-30 16:04:55
+[INFO]-[Thread: JFinal-Scanner]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2017-09-30 16:05:01
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2017-09-30 16:06:11
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.action.LoginAction.login()]: root IP: 0:0:0:0:0:0:0:1 用户登录！ID: 4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:12
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:12
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:12
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:12
+[INFO]-[Thread: qtp495792375-37]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:12
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:12
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:12
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:12
+[INFO]-[Thread: qtp495792375-37]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:13
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:13
+[INFO]-[Thread: qtp495792375-39]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:13
+[INFO]-[Thread: qtp495792375-37]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:13
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:13
+[INFO]-[Thread: qtp495792375-37]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:13
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:13
+[INFO]-[Thread: qtp495792375-39]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:13
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:13
+[INFO]-[Thread: qtp495792375-39]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:13
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:14
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:14
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:14
+[INFO]-[Thread: qtp495792375-39]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:14
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:14
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:14
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:14
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:14
+[INFO]-[Thread: qtp495792375-39]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:14
+[INFO]-[Thread: qtp495792375-37]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:14
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:14
+[INFO]-[Thread: qtp495792375-39]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:14
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:15
+[INFO]-[Thread: qtp495792375-37]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:15
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:15
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:15
+[INFO]-[Thread: qtp495792375-39]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:15
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:15
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:15
+[INFO]-[Thread: qtp495792375-37]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:15
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:15
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:15
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:15
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:15
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:16
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:16
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:16
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:16
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:16
+[INFO]-[Thread: qtp495792375-37]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:16
+[INFO]-[Thread: qtp495792375-39]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:16
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:16
+[INFO]-[Thread: qtp495792375-37]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:16
+[INFO]-[Thread: qtp495792375-39]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:16
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:17
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:17
+[INFO]-[Thread: qtp495792375-37]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:17
+[INFO]-[Thread: qtp495792375-39]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:17
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:17
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:17
+[INFO]-[Thread: qtp495792375-37]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:17
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:17
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:18
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:18
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:18
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:18
+[INFO]-[Thread: qtp495792375-39]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:18
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:18
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:18
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:18
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:18
+[INFO]-[Thread: qtp495792375-39]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:18
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:19
+[INFO]-[Thread: qtp495792375-37]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:19
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:19
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:19
+[INFO]-[Thread: qtp495792375-37]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:19
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:19
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:19
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:19
+[INFO]-[Thread: qtp495792375-37]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:19
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:20
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:20
+[INFO]-[Thread: qtp495792375-37]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:20
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:20
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:20
+[INFO]-[Thread: qtp495792375-39]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:20
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:20
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:20
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:21
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedomMatch/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:44
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:44
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:44
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:45
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:45
+[INFO]-[Thread: qtp495792375-39]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:45
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:49
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/delete ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:49
+[INFO]-[Thread: qtp495792375-39]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:51
+[INFO]-[Thread: qtp495792375-37]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/delete ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:51
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:54
+[INFO]-[Thread: qtp495792375-39]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/delete ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:06:54
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:02
+[INFO]-[Thread: qtp495792375-37]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/delete ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:02
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:05
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/delete ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:05
+[INFO]-[Thread: qtp495792375-37]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:08
+[INFO]-[Thread: qtp495792375-39]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/delete ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:08
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:12
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/delete ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:12
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:14
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:14
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:14
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:14
+[INFO]-[Thread: qtp495792375-37]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:14
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:14
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:22
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/delete ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:22
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:26
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/delete ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:26
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:29
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/delete ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:29
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:33
+[INFO]-[Thread: qtp495792375-42]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/delete ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:33
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:36
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:36
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:36
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:36
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:36
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:36
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:37
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:56
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:56
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:56
+[INFO]-[Thread: qtp495792375-37]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:56
+[INFO]-[Thread: qtp495792375-42]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:57
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:07:57
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:08:22
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/login/logOut ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:08:22
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.action.LoginAction.logOut()]: root IP: 0:0:0:0:0:0:0:1 退出登录！ID: 4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:08:33
+[INFO]-[Thread: qtp495792375-42]-[com.sinorail.wst.action.LoginAction.login()]: root IP: 0:0:0:0:0:0:0:1 用户登录！ID: 4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:08:33
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:08:33
+[INFO]-[Thread: qtp495792375-43]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:08:33
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:08:33
+[INFO]-[Thread: qtp495792375-43]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:08:34
+[INFO]-[Thread: qtp495792375-43]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:08:34
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:08:34
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:08:37
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:08:37
+[INFO]-[Thread: qtp495792375-42]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:08:37
+[INFO]-[Thread: qtp495792375-43]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:08:38
+[INFO]-[Thread: qtp495792375-43]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:08:38
+[INFO]-[Thread: qtp495792375-42]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:08:38
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedomMatch/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:08:38
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:08:42
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedomMatch/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:09:52
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:09:52
+[INFO]-[Thread: qtp495792375-44]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:09:53
+[INFO]-[Thread: qtp495792375-44]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:09:53
+[INFO]-[Thread: qtp495792375-44]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:09:53
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:09:53
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:09:53
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:09:53
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedomMatch/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:09:53
+[INFO]-[Thread: qtp495792375-42]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:09:59
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedomMatch/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:02
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedomMatch/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:02
+[INFO]-[Thread: qtp495792375-42]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedomMatch/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:05
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/delete ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:05
+[INFO]-[Thread: qtp495792375-44]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:05
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:07
+[INFO]-[Thread: qtp495792375-42]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedomMatch/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:07
+[INFO]-[Thread: qtp495792375-44]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/delete ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:07
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:07
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:09
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedomMatch/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:09
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/delete ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:09
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:09
+[INFO]-[Thread: qtp495792375-44]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:11
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedomMatch/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:12
+[INFO]-[Thread: qtp495792375-42]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:12
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/delete ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:12
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:14
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:14
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:14
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:14
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:19
+[INFO]-[Thread: qtp495792375-44]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/delete ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:19
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:19
+[INFO]-[Thread: qtp495792375-44]-[com.sinorail.wst.action.UserAction.delete()]: 
+4F0FB8C505AB00A4E0537F00000100A4
+*****删除用户ID为:5415801B09B36064E0537F0000016064
+
+2017-09-30 16:10:19
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:22
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/delete ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:22
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:22
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.action.UserAction.delete()]: 
+4F0FB8C505AB00A4E0537F00000100A4
+*****删除用户ID为:B96307698DB0492689554AC1BD08CD17
+
+2017-09-30 16:10:22
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:24
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/updateView ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:24
+[ERROR]-[Thread: qtp495792375-40]-[com.jfinal.core.ActionHandler.handle()]: /user/updateView?userId=48A1D9E28AD645DEBB0E6AF06D435445
+com.jfinal.plugin.activerecord.ActiveRecordException: java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
+
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:593)
+	at com.jfinal.plugin.activerecord.Model.findFirst(Model.java:613)
+	at com.sinorail.wst.model.DicUser.queryById(DicUser.java:56)
+	at com.sinorail.wst.action.UserAction.updateView(UserAction.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:73)
+	at com.sinorail.wst.aop.LoginInterceptor.intercept(LoginInterceptor.java:39)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:74)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:74)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:208)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:886)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1175)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1296)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3613)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3657)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1495)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:2714)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_executeQuery(WallFilter.java:604)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:2711)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_executeQuery(FilterEventAdapter.java:465)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:2711)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.executeQuery(PreparedStatementProxyImpl.java:132)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeQuery(DruidPooledPreparedStatement.java:227)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:574)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:591)
+	... 35 more
+
+2017-09-30 16:10:27
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/delete ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:27
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:27
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.action.UserAction.delete()]: 
+4F0FB8C505AB00A4E0537F00000100A4
+*****删除用户ID为:48A1D9E28AD645DEBB0E6AF06D435445
+
+2017-09-30 16:10:27
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:29
+[INFO]-[Thread: qtp495792375-44]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/delete ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:29
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:29
+[INFO]-[Thread: qtp495792375-44]-[com.sinorail.wst.action.UserAction.delete()]: 
+4F0FB8C505AB00A4E0537F00000100A4
+*****删除用户ID为:7456BA0B9EBA4347BA19D3A17037003A
+
+2017-09-30 16:10:29
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:32
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/delete ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:32
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:32
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.action.UserAction.delete()]: 
+4F0FB8C505AB00A4E0537F00000100A4
+*****删除用户ID为:22FCB8A685A64932BF9450C26C4D3E9C
+
+2017-09-30 16:10:32
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:33
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:33
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:33
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:33
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:37
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:37
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:37
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:37
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:37
+[INFO]-[Thread: qtp495792375-44]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:37
+[INFO]-[Thread: qtp495792375-44]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:37
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:37
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:37
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:37
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:39
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:39
+[INFO]-[Thread: qtp495792375-47]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:39
+[INFO]-[Thread: qtp495792375-47]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:39
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:39
+[INFO]-[Thread: qtp495792375-44]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedomMatch/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:40
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:40
+[INFO]-[Thread: qtp495792375-47]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:40
+[INFO]-[Thread: qtp495792375-47]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:40
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:43
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:43
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:43
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:43
+[INFO]-[Thread: qtp495792375-47]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:44
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:44
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:44
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:44
+[INFO]-[Thread: qtp495792375-44]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:44
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedomMatch/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:45
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/addView ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:45
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:45
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:47
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:47
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:47
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:47
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:48
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/addView ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:48
+[INFO]-[Thread: qtp495792375-47]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:48
+[INFO]-[Thread: qtp495792375-47]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:48
+[INFO]-[Thread: qtp495792375-44]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/roleList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:51
+[INFO]-[Thread: qtp495792375-47]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/detailView ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:51
+[ERROR]-[Thread: qtp495792375-47]-[com.jfinal.core.ActionHandler.handle()]: /user/detailView?id=4EC154E587A0F072E0537F000001F072
+com.jfinal.plugin.activerecord.ActiveRecordException: java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
+
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:593)
+	at com.jfinal.plugin.activerecord.Model.findFirst(Model.java:613)
+	at com.sinorail.wst.model.DicUser.queryById(DicUser.java:56)
+	at com.sinorail.wst.action.UserAction.detailView(UserAction.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:73)
+	at com.sinorail.wst.aop.LoginInterceptor.intercept(LoginInterceptor.java:39)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:74)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:74)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:208)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:886)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1175)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1296)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3613)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3657)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1495)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:2714)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_executeQuery(WallFilter.java:604)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:2711)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_executeQuery(FilterEventAdapter.java:465)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:2711)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.executeQuery(PreparedStatementProxyImpl.java:132)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeQuery(DruidPooledPreparedStatement.java:227)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:574)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:591)
+	... 35 more
+
+2017-09-30 16:10:53
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/updateView ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:10:53
+[ERROR]-[Thread: qtp495792375-40]-[com.jfinal.core.ActionHandler.handle()]: /user/updateView?userId=4EC154E587A0F072E0537F000001F072
+com.jfinal.plugin.activerecord.ActiveRecordException: java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
+
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:593)
+	at com.jfinal.plugin.activerecord.Model.findFirst(Model.java:613)
+	at com.sinorail.wst.model.DicUser.queryById(DicUser.java:56)
+	at com.sinorail.wst.action.UserAction.updateView(UserAction.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:73)
+	at com.sinorail.wst.aop.LoginInterceptor.intercept(LoginInterceptor.java:39)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:74)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:74)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:208)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:886)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1175)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1296)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3613)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3657)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1495)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:2714)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_executeQuery(WallFilter.java:604)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:2711)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_executeQuery(FilterEventAdapter.java:465)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:2711)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.executeQuery(PreparedStatementProxyImpl.java:132)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeQuery(DruidPooledPreparedStatement.java:227)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:574)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:591)
+	... 35 more
+
+2017-09-30 16:11:03
+[INFO]-[Thread: qtp495792375-44]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/detailView ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:11:03
+[ERROR]-[Thread: qtp495792375-44]-[com.jfinal.core.ActionHandler.handle()]: /user/detailView?id=4EC154E587A0F072E0537F000001F072
+com.jfinal.plugin.activerecord.ActiveRecordException: java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
+
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:593)
+	at com.jfinal.plugin.activerecord.Model.findFirst(Model.java:613)
+	at com.sinorail.wst.model.DicUser.queryById(DicUser.java:56)
+	at com.sinorail.wst.action.UserAction.detailView(UserAction.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:73)
+	at com.sinorail.wst.aop.LoginInterceptor.intercept(LoginInterceptor.java:39)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:67)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:74)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:74)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:208)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:886)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1175)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1296)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3613)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3657)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1495)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:2714)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_executeQuery(WallFilter.java:604)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:2711)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_executeQuery(FilterEventAdapter.java:465)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:2711)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.executeQuery(PreparedStatementProxyImpl.java:132)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeQuery(DruidPooledPreparedStatement.java:227)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:574)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:591)
+	... 35 more
+
+2017-09-30 16:11:29
+[INFO]-[Thread: JFinal-Scanner]-[com.alibaba.druid.pool.DruidDataSource.close()]: {dataSource-1} closed
+
+2017-09-30 16:11:30
+[INFO]-[Thread: JFinal-Scanner]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2017-09-30 16:13:02
+[INFO]-[Thread: qtp495792375-44]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:13:02
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:13:02
+[INFO]-[Thread: qtp495792375-62]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:13:02
+[INFO]-[Thread: qtp495792375-62]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:13:02
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:13:02
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:13:02
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:13:02
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:13:02
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:13:02
+[INFO]-[Thread: qtp495792375-62]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:13:04
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:13:04
+[INFO]-[Thread: qtp495792375-61]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:13:04
+[INFO]-[Thread: qtp495792375-61]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:13:04
+[INFO]-[Thread: qtp495792375-44]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:13:05
+[INFO]-[Thread: qtp495792375-44]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:13:05
+[INFO]-[Thread: qtp495792375-62]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:13:05
+[INFO]-[Thread: qtp495792375-62]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:13:05
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:13:05
+[INFO]-[Thread: qtp495792375-61]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:13:05
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:13:05
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:13:05
+[INFO]-[Thread: qtp495792375-62]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:13:05
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedomMatch/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:13:10
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedomMatch/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:13:10
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedomMatch/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:13:16
+[INFO]-[Thread: qtp495792375-44]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/login/logOut ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:13:16
+[INFO]-[Thread: qtp495792375-44]-[com.sinorail.wst.action.LoginAction.logOut()]: root IP: 0:0:0:0:0:0:0:1 退出登录！ID: 4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:14:41
+[INFO]-[Thread: qtp495792375-44]-[com.sinorail.wst.action.LoginAction.login()]: root IP: 0:0:0:0:0:0:0:1 用户登录！ID: 4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:14:41
+[INFO]-[Thread: qtp495792375-44]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:14:41
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:14:42
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:14:42
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:14:42
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:14:42
+[INFO]-[Thread: qtp495792375-61]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:14:42
+[INFO]-[Thread: qtp495792375-61]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:14:42
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:14:42
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedomMatch/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:14:43
+[INFO]-[Thread: qtp495792375-44]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/modifyPasswd ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:14:43
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:14:43
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:15:02
+[INFO]-[Thread: qtp495792375-61]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/savePasswd ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:15:10
+[INFO]-[Thread: qtp495792375-68]-[com.sinorail.wst.action.LoginAction.login()]: root IP: 0:0:0:0:0:0:0:1 用户登录！ID: 4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:15:10
+[INFO]-[Thread: qtp495792375-68]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:15:10
+[INFO]-[Thread: qtp495792375-61]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:15:10
+[INFO]-[Thread: qtp495792375-68]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:15:10
+[INFO]-[Thread: qtp495792375-68]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:15:10
+[INFO]-[Thread: qtp495792375-61]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:15:10
+[INFO]-[Thread: qtp495792375-61]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:15:10
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:15:10
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:15:10
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:15:11
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedomMatch/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:15:11
+[INFO]-[Thread: qtp495792375-40]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:13
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2017-09-30 16:18:35
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2017-09-30 16:18:43
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.action.LoginAction.login()]: root IP: 0:0:0:0:0:0:0:1 用户登录！ID: 4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:43
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:43
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:44
+[INFO]-[Thread: qtp495792375-34]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:44
+[INFO]-[Thread: qtp495792375-34]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:44
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:44
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:44
+[INFO]-[Thread: qtp495792375-37]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:44
+[INFO]-[Thread: qtp495792375-37]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:44
+[INFO]-[Thread: qtp495792375-37]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:44
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedomMatch/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:44
+[INFO]-[Thread: qtp495792375-37]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:45
+[INFO]-[Thread: qtp495792375-37]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:45
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:45
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:45
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:46
+[INFO]-[Thread: qtp495792375-34]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:46
+[INFO]-[Thread: qtp495792375-39]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:46
+[INFO]-[Thread: qtp495792375-39]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:46
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:46
+[INFO]-[Thread: qtp495792375-39]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:46
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:46
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:46
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:46
+[INFO]-[Thread: qtp495792375-34]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:46
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:46
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:46
+[INFO]-[Thread: qtp495792375-39]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedomMatch/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:46
+[INFO]-[Thread: qtp495792375-37]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:47
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:47
+[INFO]-[Thread: qtp495792375-39]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:47
+[INFO]-[Thread: qtp495792375-39]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:48
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:48
+[INFO]-[Thread: qtp495792375-34]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:48
+[INFO]-[Thread: qtp495792375-39]-[com.sinorail.wst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:48
+[INFO]-[Thread: qtp495792375-39]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:18:48
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.wst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-09-30 16:19:14
+[INFO]-[Thread: JFinal-Scanner]-[com.alibaba.druid.pool.DruidDataSource.close()]: {dataSource-1} closed
+
+2017-09-30 16:19:15
+[ERROR]-[Thread: JFinal-Scanner]-[com.jfinal.kit.LogKit.error()]: Can not create instance of class: com.sinorail.wst.MainConfig. Please check the config in web.xml
+java.lang.RuntimeException: Can not create instance of class: com.sinorail.wst.MainConfig. Please check the config in web.xml
+	at com.jfinal.core.JFinalFilter.createJFinalConfig(JFinalFilter.java:108)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:47)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer$1.onChange(JettyServer.java:117)
+	at com.jfinal.server.Scanner.compare(Scanner.java:88)
+	at com.jfinal.server.Scanner.working(Scanner.java:57)
+	at com.jfinal.server.Scanner.access$000(Scanner.java:31)
+	at com.jfinal.server.Scanner$1.run(Scanner.java:94)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+2017-10-18 14:47:11
+[ERROR]-[Thread: main]-[com.jfinal.kit.LogKit.error()]: Can not create instance of class: com.sinorail.wst.MainConfig
+java.lang.RuntimeException: Can not create instance of class: com.sinorail.wst.MainConfig
+	at com.jfinal.core.JFinalFilter.createJFinalConfig(JFinalFilter.java:102)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:47)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:131)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:70)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.sinorail.cwzywst.MainConfig.main(MainConfig.java:137)
+Caused by: java.lang.ClassNotFoundException: com.sinorail.wst.MainConfig
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:430)
+	at com.jfinal.server.JFinalClassLoader.loadClass(JFinalClassLoader.java:53)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at com.jfinal.core.JFinalFilter.createJFinalConfig(JFinalFilter.java:100)
+	... 16 more
+
+2017-10-18 14:47:36
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2017-10-18 14:47:44
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.action.LoginAction.login()]: root IP: 0:0:0:0:0:0:0:1 用户登录！ID: 4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:47:44
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:47:44
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:47:44
+[INFO]-[Thread: qtp511473681-36]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:47:44
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:47:44
+[INFO]-[Thread: qtp511473681-36]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:47:44
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:48:18
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2017-10-18 14:48:27
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.action.LoginAction.login()]: root IP: 0:0:0:0:0:0:0:1 用户登录！ID: 4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:48:27
+[INFO]-[Thread: qtp511473681-36]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:48:27
+[INFO]-[Thread: qtp511473681-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:48:27
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:48:27
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:48:27
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:48:27
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:56:53
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2017-10-18 14:57:06
+[INFO]-[Thread: qtp511473681-35]-[com.sinorail.cwzywst.action.LoginAction.login()]: root IP: 0:0:0:0:0:0:0:1 用户登录！ID: 4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:07
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:07
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:07
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:07
+[INFO]-[Thread: qtp511473681-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:07
+[INFO]-[Thread: qtp511473681-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:07
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:09
+[INFO]-[Thread: qtp511473681-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:10
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:11
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:11
+[INFO]-[Thread: qtp511473681-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:11
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:11
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:11
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:11
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:11
+[INFO]-[Thread: qtp511473681-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:11
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:11
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:11
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:11
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:11
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:11
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:11
+[INFO]-[Thread: qtp511473681-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:11
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:11
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:11
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:11
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:11
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:11
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:11
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:57:11
+[INFO]-[Thread: qtp511473681-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:31
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:31
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:32
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:32
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:32
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:32
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:32
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:32
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:32
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:32
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:35
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:35
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:35
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:35
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:35
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:35
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:35
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:36
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:36
+[INFO]-[Thread: qtp511473681-41]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedomMatch/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:36
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:36
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:36
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:36
+[INFO]-[Thread: qtp511473681-41]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:37
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:37
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:37
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:37
+[INFO]-[Thread: qtp511473681-41]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:38
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:38
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:38
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:38
+[INFO]-[Thread: qtp511473681-41]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:38
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:38
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:38
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:38
+[INFO]-[Thread: qtp511473681-41]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedomMatch/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:38
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:40
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:40
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:40
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:40
+[INFO]-[Thread: qtp511473681-41]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:40
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedomMatch/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:40
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:40
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:40
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:40
+[INFO]-[Thread: qtp511473681-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:41
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:41
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:41
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 14:58:41
+[INFO]-[Thread: qtp511473681-41]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:44
+[INFO]-[Thread: qtp511473681-43]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:44
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:45
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:45
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:45
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:45
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:45
+[INFO]-[Thread: qtp511473681-43]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:45
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:45
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:45
+[INFO]-[Thread: qtp511473681-42]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:45
+[INFO]-[Thread: qtp511473681-42]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:45
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:45
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:45
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:45
+[INFO]-[Thread: qtp511473681-43]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:45
+[INFO]-[Thread: qtp511473681-43]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:46
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:46
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:46
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:46
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:46
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:46
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:46
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:46
+[INFO]-[Thread: qtp511473681-42]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedomMatch/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:46
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:48
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:48
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:48
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:48
+[INFO]-[Thread: qtp511473681-43]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:49
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:49
+[INFO]-[Thread: qtp511473681-43]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:49
+[INFO]-[Thread: qtp511473681-43]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:49
+[INFO]-[Thread: qtp511473681-42]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedomMatch/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:49
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:57
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:57
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:57
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:57
+[INFO]-[Thread: qtp511473681-43]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:57
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:58
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:58
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:58
+[INFO]-[Thread: qtp511473681-43]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:58
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:58
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:58
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:00:58
+[INFO]-[Thread: qtp511473681-43]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:01:00
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:01:00
+[INFO]-[Thread: qtp511473681-43]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:01:00
+[INFO]-[Thread: qtp511473681-43]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:01:00
+[INFO]-[Thread: qtp511473681-42]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:01:00
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedomMatch/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:01:00
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:01:00
+[INFO]-[Thread: qtp511473681-42]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:01:00
+[INFO]-[Thread: qtp511473681-42]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:01:00
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:01:01
+[INFO]-[Thread: qtp511473681-43]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:01:01
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:01:01
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:01:01
+[INFO]-[Thread: qtp511473681-42]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:01:01
+[INFO]-[Thread: qtp511473681-43]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:01:01
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:01:01
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:01:02
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:01:02
+[INFO]-[Thread: qtp511473681-37]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:01:02
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:01:02
+[INFO]-[Thread: qtp511473681-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:01:02
+[INFO]-[Thread: qtp511473681-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-10-18 15:01:02
+[INFO]-[Thread: qtp511473681-42]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedomMatch/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-11-10 14:04:48
+[ERROR]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: init datasource error
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:389)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:382)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:675)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:448)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:383)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:776)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:432)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:553)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:254)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:528)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1360)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1414)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:602)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:876)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:872)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:97)
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:43)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:218)
+	at com.jfinal.core.Config.startPlugins(Config.java:107)
+	at com.jfinal.core.Config.configJFinal(Config.java:53)
+	at com.jfinal.core.JFinal.init(JFinal.java:63)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:131)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:70)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.sinorail.cwzywst.MainConfig.main(MainConfig.java:137)
+
+2017-11-10 14:04:48
+[ERROR]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: dataSource init error
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:389)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:382)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:675)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:448)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:383)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:776)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:432)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:553)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:254)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:528)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1360)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1414)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:602)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:876)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:872)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:97)
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:43)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:218)
+	at com.jfinal.core.Config.startPlugins(Config.java:107)
+	at com.jfinal.core.Config.configJFinal(Config.java:53)
+	at com.jfinal.core.JFinal.init(JFinal.java:63)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:131)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:70)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.sinorail.cwzywst.MainConfig.main(MainConfig.java:137)
+
+2017-11-10 14:04:48
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2017-11-10 14:04:48
+[ERROR]-[Thread: main]-[com.jfinal.core.Config.startPlugins()]: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+com.jfinal.plugin.activerecord.ActiveRecordException: java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:55)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:218)
+	at com.jfinal.core.Config.startPlugins(Config.java:107)
+	at com.jfinal.core.Config.configJFinal(Config.java:53)
+	at com.jfinal.core.JFinal.init(JFinal.java:63)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:131)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:70)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.sinorail.cwzywst.MainConfig.main(MainConfig.java:137)
+Caused by: java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:389)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:382)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:675)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:448)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:383)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:776)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:432)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:553)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:254)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:528)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1360)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1414)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:602)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:876)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:872)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:97)
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:43)
+	... 20 more
+
+2017-11-10 14:04:48
+[ERROR]-[Thread: main]-[com.jfinal.kit.LogKit.error()]: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+java.lang.RuntimeException: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at com.jfinal.core.Config.startPlugins(Config.java:116)
+	at com.jfinal.core.Config.configJFinal(Config.java:53)
+	at com.jfinal.core.JFinal.init(JFinal.java:63)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:131)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:70)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.sinorail.cwzywst.MainConfig.main(MainConfig.java:137)
+Caused by: com.jfinal.plugin.activerecord.ActiveRecordException: java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:55)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:218)
+	at com.jfinal.core.Config.startPlugins(Config.java:107)
+	... 18 more
+Caused by: java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:389)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:382)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:675)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:448)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:383)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:776)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:432)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:553)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:254)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:528)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1360)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1414)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:602)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:876)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:872)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:97)
+	at com.jfinal.plugin.activerecord.TableBuilder.build(TableBuilder.java:43)
+	... 20 more
+
+2017-11-10 14:04:56
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2017-11-10 14:05:06
+[INFO]-[Thread: qtp495792375-34]-[com.sinorail.cwzywst.action.LoginAction.login()]: root IP: 0:0:0:0:0:0:0:1 用户登录！ID: 4F0FB8C505AB00A4E0537F00000100A4
+
+2017-11-10 14:05:06
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/left ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-11-10 14:05:06
+[INFO]-[Thread: qtp495792375-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/open ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-11-10 14:05:06
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-11-10 14:05:06
+[INFO]-[Thread: qtp495792375-38]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-11-10 14:05:06
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-11-10 14:05:06
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-11-10 14:05:09
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-11-10 14:05:09
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-11-10 14:05:09
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-11-10 14:05:09
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/role/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-11-10 14:05:09
+[INFO]-[Thread: qtp495792375-35]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedomMatch/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-11-10 14:05:11
+[INFO]-[Thread: qtp495792375-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-11-10 14:05:11
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-11-10 14:05:11
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-11-10 14:05:11
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/user/list ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-11-10 14:05:11
+[INFO]-[Thread: qtp495792375-33]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-11-10 14:05:11
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.cwzywst.aop.LoginInterceptor.isExistUrl()]: ---------未授权路径: (/popedom/permissionButtonList) 用户: root IP: 0:0:0:0:0:0:0:1 ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-11-10 14:05:11
+[INFO]-[Thread: qtp495792375-36]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/permissionButtonList ID:4F0FB8C505AB00A4E0537F00000100A4
+
+2017-11-10 14:05:12
+[INFO]-[Thread: qtp495792375-34]-[com.sinorail.cwzywst.aop.LoginInterceptor.intercept()]: root IP:0:0:0:0:0:0:0:1 uri:/popedom/list ID:4F0FB8C505AB00A4E0537F00000100A4
